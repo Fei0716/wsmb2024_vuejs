@@ -1,0 +1,25 @@
+body{
+    background-color: #ebebeb;
+}
+#index-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#game-cards{
+    display: grid;
+    width: 100%;
+    padding: 1rem 2rem;
+    gap: 0.5rem;
+}
+.game-card{
+    border: 1px solid #2f2f2f;
+    height: 115px;
+    border-radius: 0.5rem;
+    max-width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    background-color: white;
+}
