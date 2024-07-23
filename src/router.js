@@ -32,7 +32,8 @@ const router = createRouter({
 });
 
 router.beforeEach((to,from,next)=>{
-    if(to.name !== 'Game' && game.value !== {}){
+    if(to.name !== 'Game' && game.value.mode != undefined){
+        alert("Please finish the previous game first!!");
         next({name: 'Game'});
     }else{
         next();

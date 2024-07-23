@@ -14,12 +14,56 @@ body{
     padding: 1rem 2rem;
     gap: 0.5rem;
 }
+#game-info{
+    padding: 1rem ;
+
+}
+#game-info > *{
+    white-space: nowrap;
+
+}
+
+.game-card-wrapper{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform 0.2s ease;
+    transform: rotateY(0);
+}
+.flip-animation{
+    transform: rotateY(180deg);
+
+}
+
+.game-card-wrapper{
+    cursor: pointer;
+}
 .game-card{
-    border: 1px solid #2f2f2f;
+    border: 2px solid #2f2f2f;
     height: 115px;
     border-radius: 0.5rem;
     max-width: 100%;
     object-fit: contain;
     cursor: pointer;
     background-color: white;
+    z-index: 2;
+    position: relative;
+    transition: all 0.2s ease;
+}
+.game-card-wrapper::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 115px;
+    width: 100%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #3e3e3e;
+    z-index: 3;
+    backface-visibility: hidden;
+
+}
+.game-card.matched{
+    border-color: #b50000;
 }

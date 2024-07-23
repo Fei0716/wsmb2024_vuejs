@@ -1,6 +1,6 @@
 const template = `
   <section aria-label="Section Index Page's Navigations" class="h-100 w-100">
-      <article class="card w-50 d-flex justify-content-center align-items-center" id="index-wrapper">
+      <article class="card w-25 d-flex justify-content-center align-items-center" id="index-wrapper">
       <div class="card-body">
             <h1 class="text-center mb-3">Flip & Match</h1>
             <nav class="d-flex justify-content-center mb-3 flex-column gap-2">
