@@ -67,3 +67,15 @@ body{
 .game-card.matched{
     border-color: #b50000;
 }
+
+
+/*Leaderboard*/
+#leaderboard-nav li{
+    list-style: none;
+}
+#leaderboard-nav a{
+    transition: all 0.2s ease;
+}
+#leaderboard-nav a.selected{
+    text-decoration: underline 2px  #b50000!important;
+}

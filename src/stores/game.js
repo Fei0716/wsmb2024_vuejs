@@ -4,6 +4,7 @@ const game = ref(localStorage.getItem('game') !== null ? JSON.parse(localStorage
     flipCount: 0,
     time: 0,
     lastFlippedCards: [],
+    rankings: [],
 });
 
 watchEffect(()=>{
@@ -13,7 +14,6 @@ watchEffect(()=>{
 
 //actions
 game.value.initialCards = function(){
-    console.log(game.value.mode)
     if(game.value.mode != undefined){
         let cardsCount = game.value.mode === 'easy'? 12 : 20;
         let cards = [];

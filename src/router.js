@@ -19,7 +19,7 @@ const routes = [
 
     },
     {
-        path: '/leaderboard',
+        path: '/leaderboard/:mode',
         name: 'Leaderboard',
         component: Leaderboard,
 

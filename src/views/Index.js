@@ -25,6 +25,11 @@ export default{
                 //redirect to game page
                 game.value.mode = mode;
             }
+
+            if(name === 'Leaderboard'){
+                router.push({name: name , params:{mode: 'easy'}});
+                return;
+            }
             router.push({name: name});
         }
 
